@@ -1,0 +1,145 @@
+.website_layout {
+    width: 100%;
+    height: 100vh;
+}
+
+.body {
+    margin: 0
+}
+
+/* Title_pane (Header) */
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header > h1 {
+    width: 40%;
+}
+
+.header > nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title_pane {
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}
+
+/* Columns */
+
+
+.left_column {
+    width: 33%;
+    height: 100vh;
+    background-color:  blue;
+    float: left;
+}
+.middle_column {
+    display: grid;
+    height: 100vh;
+    background-color: red;
+    float: left;
+  }
+  
+.right_column {
+    width: 33%;
+    height: 100vh;
+    background-color: rgb(255, 13, 0);
+    float: right;
+  }
+
+
+/* All Products */
+
+.products {
+    background-color: rgb(183, 253, 183);
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+  /* Crystal_cards */
+
+.crystals {
+    background-color: green;
+    border: 3px solid black;
+    flex-wrap: wrap;
+
+}
+
+button, input[type="submit"] {
+    background-color: rgb(184, 184, 255);
+    text-transform: uppercase;
+    border: 3px solid navy;
+    font-weight: bold;
+    padding: 10px;
+    width: 6em;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: yellow;
+    transform: scale(1.1);
+    border-style: dashed;
+}
+
+button:active, input[type="submit"]:active {
+    background-color: rgb(184, 184, 255);
+    transform: scale(1);
+}
+
+  /* Footer */
+
+.footer {
+    background-color: rgb(255, 246, 84);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+.footer nav,
+.footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer p {
+    margin: 0;
+}
+
+.footer__logo {
+    width: 100%;
+}
+
+/* Contact Form */
+
+.contact {
+    background-color: rgb(187, 222, 234);
+    display: flex;
+}
+
+.contact__form {
+    display: flex;
+    align-items: center;
+}
+
+.contact__text {
+    width: 50%;
+}
+
+.contact__form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    margin: 10px;
+}
